@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img class="img-logo" src="img/logo.png">
+    </header>
+    <article id="container">
+        <section id="sec-izquierda">
+            <div id="div-entrada_texto" class="div-centrar">
+                <textarea id="txt_entrada_texto" class="texto-entrada_texto" cols="30" rows="15" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div id="div-advertencia">
+                <p><img src="img/exclamacion.png" class="img-exclamacion">Solo letras minúsculas y sin acentos </p>
+            </div>
+            <div id="div-btn_entrada_texto" class="div-centrar">
+                <button id="btn_encriptar" class="btn btn-encriptar">Encriptar</button>
+                <button id="btn_desencriptar" class="btn btn-desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section id="sec-derecha">
+            <div id="div-salida_texto" class="div-derecha">
+                <textarea id="txt_salida_texto" class="texto-salida_texto" cols="30" rows="7"></textarea>
+            </div>
+            <div id="div-resultado" class="div-centrar">
+                <img class="img-muñeco" src="img/muñeco.png">
+                <p class="p-titulo_mensaje">Ningún mensaje fue encontrado</p>
+                <p class="p-mensaje">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div id="div-btn_salida_texto" class="div-derecha">
+                <button id="btn_copiar" class="btn btn-copiar">Copiar</button>
+            </div>
+        </section>
+    </article>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
